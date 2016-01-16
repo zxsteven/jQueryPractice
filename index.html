@@ -11,10 +11,27 @@
 </head>
 
 <body>
-	<div id='square'></div>
-	<div id='circle'></div>
-	<button id="text">Fade Out</button> <button id="texts">Fade In</button>
-	<p>Some text.</p>
+	<div id="error"></div>
+	<div id='form'>
+		<form id="validate">
+
+			<label for="email">Email</label>
+				<input name="email" id="email" /> <br />
+
+			<label for="phone">Phone</label>
+				<input name="phone" /> <br />
+
+			<label for="password">Password</label>
+				<input name="password" type="password" /> <br />
+
+			<label for="password">Password Confirmation</label>
+				<input name="password" type="password" /> <br />
+
+			<input id="submit" type="submit" value="Submit">
+
+		</form>
+	</div>
+	
 
 	<script type="text/javascript" src="jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
