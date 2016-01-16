@@ -1,35 +1,5 @@
-#form {
-	margin: 0 auto;
-	width: 750px;
-	font-family: helvetica;
-}
-
-input {
-	padding: 10px;
-	border-radius: 10px;
-	font-size: 1.2em;
-	border: 1px sold grey;
-	margin-bottom: 10px;
-	width: 300px;
-}
-
-label {
-	float: left;
-	padding-top: 10px;
-	width: 100px;
-}
-
-#submit {
-	height: 50px;
-	width: 100px;
-	margin-left: 100px;
-}
-
-#error {
-	font-family: sans-serif;
-	color: red;
-	font-size: 1.3em;
-	width: 40%;
-	border-radius: 10px;
-	margin: 10px auto;
+#square {
+	width: 200px;
+	height: 200px;
+	background-color: green;
 }
