@@ -1,1 +1,1 @@
-$('ul').sortable();
+$("#accordion").accordion();
