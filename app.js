@@ -1,3 +1,6 @@
-$("div").click(function() {
-	$("#circle").animate({width:"300px", height:"300px"}, 1500);
-});
+var regex = /great/;
+var string = "Regex is great!";
+
+var result = string.match(regex);
+
+alert(result);
