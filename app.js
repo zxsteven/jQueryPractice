@@ -1,4 +1,6 @@
 $("#validate").submit(function(event) {
+	var errorMessage = "";
+
 	event.preventDefault();
 
 	function isValidEmailAddress(emailAddress) {
@@ -6,7 +8,22 @@ $("#validate").submit(function(event) {
     return pattern.test(emailAddress);
 	};
 
-	if (!isValidEmailAddress($('#email').val())) {
-		$('#error').html("Please enter a valid email...")
+	if (!isValidEmailAddress($("#email").val())) {
+		errorMessage = "Please enter a valid email address";
+	}
+ 
+	if (!$.isNumeric($("#phone").val())) {			
+		errorMessage = errorMessage + "<br /> Please enter a valid phone number";			
+	}
+
+	if ($('#password').val() !== $('#confirm').val()) {
+		errorMessage = errorMessage + "<br /> Please make sure passwords match...";
+	}
+
+	if (errorMessage === "") {
+		alert('safe');
+	} else {
+		$('#error').html(errorMessage);
 	};
+
 });

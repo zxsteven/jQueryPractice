@@ -1,6 +1,7 @@
 #form {
 	margin: 0 auto;
 	width: 750px;
+	font-family: helvetica;
 }
 
 input {
@@ -25,10 +26,10 @@ label {
 }
 
 #error {
+	font-family: sans-serif;
+	color: red;
 	font-size: 1.3em;
-	width: 25%;
+	width: 40%;
 	border-radius: 10px;
-	background-color: yellow;
-	text-align: center;
-	margin: 0 auto;
+	margin: 10px auto;
 }
