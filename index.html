@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>jQuery</title>
+  <title>CodeBin</title>
 
   <meta charset="utf-8" />
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -20,11 +20,28 @@
 				<button id="run">Run</button>
 			</div>
 			<ul id="toggle">
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li style="border:none">Result</li>
+				<li class="tog selected">HTML</li>
+				<li class="tog">CSS</li>
+				<li class="tog">JS</li>
+				<li class="tog selected" style="border:none">Result</li>
 			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="codeContainer" id="HTMLContainer">
+			<div class="codeLabel">HTML</div>
+			<textarea id="htmlCode">Example Code</textarea>
+		</div>
+		<div class="codeContainer" id="CSSContainer">
+			<div class="codeLabel">CSS</div>
+			<textarea id="cssCode">html {background-color: blue}</textarea>
+		</div>
+		<div class="codeContainer" id="JSContainer">
+			<div class="codeLabel">JavaScript</div>
+			<textarea id="jsCode">alert('done');</textarea>
+		</div>
+		<div class="codeContainer" id="ResultContainer">
+			<div class="codeLabel">Result</div>
+			<iframe id="resultFrame"></iframe>
 		</div>
 	</div>
 
